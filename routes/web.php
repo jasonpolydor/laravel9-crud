@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('customer', CustomerController::class);
+
+Route::get('wizard', function () {
+    return view('form');
+    });
